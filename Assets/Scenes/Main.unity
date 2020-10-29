@@ -133,6 +133,7 @@ GameObject:
   - component: {fileID: 35961378}
   - component: {fileID: 35961377}
   - component: {fileID: 35961376}
+  - component: {fileID: 35961379}
   m_Layer: 5
   m_Name: Button Feed
   m_TagString: Untagged
@@ -239,6 +240,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 35961374}
   m_CullTransparentMesh: 0
+--- !u!114 &35961379
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 35961374}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7467399d01c9844286be4cce251c05c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &40919614
 GameObject:
   m_ObjectHideFlags: 0
@@ -376,6 +389,7 @@ GameObject:
   - component: {fileID: 159023871}
   - component: {fileID: 159023870}
   - component: {fileID: 159023869}
+  - component: {fileID: 159023872}
   m_Layer: 5
   m_Name: Button Reset
   m_TagString: Untagged
@@ -482,6 +496,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 159023867}
   m_CullTransparentMesh: 0
+--- !u!114 &159023872
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 159023867}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7467399d01c9844286be4cce251c05c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &223974226
 GameObject:
   m_ObjectHideFlags: 0
@@ -723,6 +749,7 @@ GameObject:
   - component: {fileID: 1101529669}
   - component: {fileID: 1101529668}
   - component: {fileID: 1101529667}
+  - component: {fileID: 1101529670}
   m_Layer: 5
   m_Name: Button Sleep
   m_TagString: Untagged
@@ -829,6 +856,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1101529665}
   m_CullTransparentMesh: 0
+--- !u!114 &1101529670
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1101529665}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7467399d01c9844286be4cce251c05c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1114040580
 GameObject:
   m_ObjectHideFlags: 0
@@ -899,6 +938,8 @@ GameObject:
   - component: {fileID: 1323821484}
   - component: {fileID: 1323821483}
   - component: {fileID: 1323821482}
+  - component: {fileID: 1323821485}
+  - component: {fileID: 1323821486}
   m_Layer: 5
   m_Name: Button Settings
   m_TagString: Untagged
@@ -968,15 +1009,15 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_MethodName: 
-        m_Mode: 1
+      - m_Target: {fileID: 1323821486}
+        m_MethodName: LoadScene
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: Settings
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1323821483
@@ -1016,6 +1057,30 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1323821480}
   m_CullTransparentMesh: 0
+--- !u!114 &1323821485
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1323821480}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7467399d01c9844286be4cce251c05c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1323821486
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1323821480}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76dc8a5c28ef91142b3e9169f5b5ddfa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &27981687217722123
 Transform:
   m_ObjectHideFlags: 0

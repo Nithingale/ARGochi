@@ -134,6 +134,7 @@ GameObject:
   - component: {fileID: 35961377}
   - component: {fileID: 35961376}
   - component: {fileID: 35961379}
+  - component: {fileID: 35961380}
   m_Layer: 5
   m_Name: Button Feed
   m_TagString: Untagged
@@ -202,7 +203,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 35961377}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 35961380}
+        m_MethodName: RestoreFood
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &35961377
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -250,6 +262,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b7467399d01c9844286be4cce251c05c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &35961380
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 35961374}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83e5829853882104a82fdefc0292d6bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &40919614
@@ -750,6 +774,7 @@ GameObject:
   - component: {fileID: 1101529668}
   - component: {fileID: 1101529667}
   - component: {fileID: 1101529670}
+  - component: {fileID: 1101529671}
   m_Layer: 5
   m_Name: Button Sleep
   m_TagString: Untagged
@@ -818,7 +843,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1101529668}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1101529671}
+        m_MethodName: RestoreSleep
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1101529668
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -868,6 +904,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b7467399d01c9844286be4cce251c05c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1101529671
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1101529665}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de0024763b05a7445b0dd3b4ece15215, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1114040580
 GameObject:
   m_ObjectHideFlags: 0
@@ -879,6 +927,7 @@ GameObject:
   - component: {fileID: 1114040583}
   - component: {fileID: 1114040582}
   - component: {fileID: 1114040581}
+  - component: {fileID: 1114040584}
   m_Layer: 0
   m_Name: AR Session
   m_TagString: Untagged
@@ -926,6 +975,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1114040584
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1114040580}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b702b6c31e33ff4a9a7c1d25ba42259, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1323821480
 GameObject:
   m_ObjectHideFlags: 0

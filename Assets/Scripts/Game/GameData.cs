@@ -4,7 +4,10 @@ using UnityEngine;
 
 public static class GameData
 {
-    public static float food = 100.0f;
-    public static float sleep = 100.0f;
+    public static float foodRef = SettingsData.difficulty * 10.0f;
+    public static float sleepRef = SettingsData.difficulty * 25.0f;
+
+    public static float food = foodRef;
+    public static float sleep = sleepRef;
     public static bool isAlive = true;
 }

@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public static class HandSettingData
+public static class SettingsData
 {
+    public static int difficulty = 5; // Lower = Harder
     public static bool leftHanded = false;
 }

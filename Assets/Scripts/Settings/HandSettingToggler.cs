@@ -9,9 +9,9 @@ public class HandSettingToggler : MonoBehaviour
 
     void Start() {
         toggle = GetComponent<Toggle>();
-        toggle.isOn = HandSettingData.leftHanded;
+        toggle.isOn = SettingsData.leftHanded;
         toggle.onValueChanged.AddListener((bool isOn) => {
-            HandSettingData.leftHanded = isOn;
+            SettingsData.leftHanded = isOn;
         });
     }
 }

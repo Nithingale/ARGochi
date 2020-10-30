@@ -5,10 +5,8 @@ using UnityEngine.UI;
 
 public class HandSettingToggler : MonoBehaviour
 {
-    private Toggle toggle;
-
     void Start() {
-        toggle = GetComponent<Toggle>();
+        Toggle toggle = GetComponent<Toggle>();
         toggle.isOn = SettingsData.leftHanded;
         toggle.onValueChanged.AddListener((bool isOn) => {
             SettingsData.leftHanded = isOn;

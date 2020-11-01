@@ -13,10 +13,10 @@ public class PlayerInteraction : MonoBehaviour
     {
         GameObject chaos = GameObject.Find("Chaos");
         if (chaos) {
-            chaos.transform.eulerAngles = new Vector3(
-                chaos.transform.eulerAngles.x,
-                chaos.transform.eulerAngles.y + initialPos,
-                chaos.transform.eulerAngles.z
+            chaos.transform.position = new Vector3(
+                chaos.transform.position.x,
+                chaos.transform.position.y + initialPos,
+                chaos.transform.position.z
             );
         }
     }

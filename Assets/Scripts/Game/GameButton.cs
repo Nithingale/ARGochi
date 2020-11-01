@@ -9,9 +9,11 @@ public class GameButton : MonoBehaviour
     public GameObject chaos;
 
     private Image image;
+    private Animator animator;
 
     void Start() {
         image = GetComponent<Image>();
+        animator = chaos.GetComponent<Animator>();
     }
 
     void Update() {
@@ -27,26 +29,10 @@ public class GameButton : MonoBehaviour
     public void Restore() {
         if (dataType == "food") {
             GameData.food = GameData.foodRef;
-            Animation anim = chaos.GetComponent<Animation>();
-            int i = 0;
-            foreach (AnimationState state in anim) {
-                if (i == 1) {
-                    anim.Play(state.name);
-                    break;
-                }
-                i++;
-            }
+            animator.SetBool("Eat", true);
         } else if (dataType == "sleep") {
             GameData.sleep = GameData.sleepRef;
-            Animation anim = chaos.GetComponent<Animation>();
-            int i = 0;
-            foreach (AnimationState state in anim) {
-                if (i == 3) {
-                    anim.Play(state.name);
-                    break;
-                }
-                i++;
-            }
+            animator.SetBool("Sleep", true);
         }
     }
 }

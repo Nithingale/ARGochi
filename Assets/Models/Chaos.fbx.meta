@@ -18,6 +18,171 @@ ModelImporter:
   - first:
       74: -4630339522487117836
     second: Die
+  - first:
+      74: 4461847828861067907
+    second: Walk //// Armature
+  - first:
+      74: -370143317951901768
+    second: Idle //// Armature
+  - first:
+      74: -4342255464017255545
+    second: Eat //// Armature
+  - first:
+      74: -4747402936660936116
+    second: Sleep //// Armature
+  - first:
+      74: 2743652173147030940
+    second: Die //// Armature
+  - first:
+      74: 4102850094313852767
+    second: Walk //// Head
+  - first:
+      74: -6085299403467966886
+    second: Idle //// Head
+  - first:
+      74: 8894931704209958610
+    second: Eat //// Head
+  - first:
+      74: 2744890170573968414
+    second: Sleep //// Head
+  - first:
+      74: -8732240193801704992
+    second: Die //// Head
+  - first:
+      74: -8664380312805613113
+    second: Walk //// Epaule droite
+  - first:
+      74: -7924150639777848183
+    second: Idle //// Epaule droite
+  - first:
+      74: 539177290156749859
+    second: Eat //// Epaule droite
+  - first:
+      74: 7598323976472730366
+    second: Sleep //// Epaule droite
+  - first:
+      74: 8607792286934046733
+    second: Die //// Epaule droite
+  - first:
+      74: -476514448775406198
+    second: Walk //// bras droit
+  - first:
+      74: 5480080396844331865
+    second: Idle //// bras droit
+  - first:
+      74: -7357550026721442161
+    second: Eat //// bras droit
+  - first:
+      74: 3035556454583380376
+    second: Sleep //// bras droit
+  - first:
+      74: -2101010119259810206
+    second: Die //// bras droit
+  - first:
+      74: 3341601469861784014
+    second: Walk //// Epaule gauche
+  - first:
+      74: 5406325675177372821
+    second: Idle //// Epaule gauche
+  - first:
+      74: -4052885635292730966
+    second: Eat //// Epaule gauche
+  - first:
+      74: 5962108291086394036
+    second: Sleep //// Epaule gauche
+  - first:
+      74: 8944144325683101595
+    second: Die //// Epaule gauche
+  - first:
+      74: 1558909274582179209
+    second: Walk //// bras gauche
+  - first:
+      74: -8502251027238847928
+    second: Idle //// bras gauche
+  - first:
+      74: -183738802014432746
+    second: Eat //// bras gauche
+  - first:
+      74: 4189570662575770915
+    second: Sleep //// bras gauche
+  - first:
+      74: -7163919300349840037
+    second: Die //// bras gauche
+  - first:
+      74: 6077747988018801966
+    second: Walk //// Taille
+  - first:
+      74: 4271859804847615860
+    second: Idle //// Taille
+  - first:
+      74: -2641174714179742314
+    second: Eat //// Taille
+  - first:
+      74: 7613368523045557105
+    second: Sleep //// Taille
+  - first:
+      74: -637217301193217060
+    second: Die //// Taille
+  - first:
+      74: -66027361064505072
+    second: Walk //// Jambe droite
+  - first:
+      74: 1466840763704116302
+    second: Idle //// Jambe droite
+  - first:
+      74: -808124715051366180
+    second: Eat //// Jambe droite
+  - first:
+      74: 567974448679165609
+    second: Sleep //// Jambe droite
+  - first:
+      74: -2546188844031546777
+    second: Die //// Jambe droite
+  - first:
+      74: 6839873735666681952
+    second: Walk //// Pied droit
+  - first:
+      74: 921488350173693569
+    second: Idle //// Pied droit
+  - first:
+      74: 1015658558127865244
+    second: Eat //// Pied droit
+  - first:
+      74: 3071151929730890684
+    second: Sleep //// Pied droit
+  - first:
+      74: -2614904480453438094
+    second: Die //// Pied droit
+  - first:
+      74: 963512092311846801
+    second: Walk //// jambe gauche
+  - first:
+      74: -5124337484257830208
+    second: Idle //// jambe gauche
+  - first:
+      74: 1128981147386533161
+    second: Eat //// jambe gauche
+  - first:
+      74: -6845345162353090934
+    second: Sleep //// jambe gauche
+  - first:
+      74: 7191859511937155487
+    second: Die //// jambe gauche
+  - first:
+      74: 9012958862329672879
+    second: Walk //// Pied gauche
+  - first:
+      74: -3365408134990943248
+    second: Idle //// Pied gauche
+  - first:
+      74: -159886908569366856
+    second: Eat //// Pied gauche
+  - first:
+      74: -4474883003738049435
+    second: Sleep //// Pied gauche
+  - first:
+      74: 1660799367649110146
+    second: Die //// Pied gauche
   externalObjects:
   - first:
       type: UnityEngine:Material
@@ -72,7 +237,7 @@ ModelImporter:
   animations:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
-    resampleCurves: 0
+    resampleCurves: 1
     optimizeGameObjects: 0
     motionNodeName: 
     rigImportErrors: 
@@ -83,7 +248,7 @@ ModelImporter:
     animationDoRetargetingWarnings: 0
     importAnimatedCustomProperties: 0
     importConstraints: 0
-    animationCompression: 0
+    animationCompression: 3
     animationRotationError: 0.5
     animationPositionError: 0.5
     animationScaleError: 0.5
@@ -287,15 +452,15 @@ ModelImporter:
     legStretch: 0.05
     feetSpacing: 0
     globalScale: 1
-    rootMotionBoneName: 
+    rootMotionBoneName: Armature
     hasTranslationDoF: 0
-    hasExtraRoot: 0
+    hasExtraRoot: 1
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
   autoGenerateAvatarMappingIfUnspecified: 1
   animationType: 2
   humanoidOversampling: 1
-  avatarSetup: 0
+  avatarSetup: 1
   additionalBone: 0
   userData: 
   assetBundleName: 

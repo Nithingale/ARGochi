@@ -4,14 +4,14 @@ using UnityEngine;
 
 public class PlayerInteraction : MonoBehaviour
 {
-    public float force = 1000.0f;
+    private float force = 100.0f;
     private Rigidbody rb;
-    public float initialPos = 3.0f;
+    private float initialPos = 10.0f;
 
     // Start is called before the first frame update
     void Start()
     {
-        GameObject chaos = GameObject.Find("Chaos");
+        GameObject chaos = GameObject.FindWithTag("chaos");
         if (chaos) {
             chaos.transform.position = new Vector3(
                 chaos.transform.position.x,
@@ -28,14 +28,14 @@ public class PlayerInteraction : MonoBehaviour
 
     public void Jump()
     {
-        GameObject chaos = GameObject.Find("Chaos");
+        GameObject chaos = GameObject.FindWithTag("chaos");
         if (chaos) 
             chaos.GetComponent<Rigidbody>().AddForce(Random.Range(-10.0f, 10.0f), force, Random.Range(-10.0f, 10.0f));
     }
 
     public void Stand()
     {
-        GameObject chaos = GameObject.Find("Chaos");
+        GameObject chaos = GameObject.FindWithTag("chaos");
         if (chaos) {
             chaos.transform.eulerAngles = new Vector3(
                 chaos.transform.eulerAngles.x,

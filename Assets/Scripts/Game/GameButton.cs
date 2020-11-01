@@ -6,11 +6,14 @@ using UnityEngine.UI;
 public class GameButton : MonoBehaviour
 {
     public string dataType;
+    public GameObject chaos;
 
     private Image image;
+    private Animator animator;
 
     void Start() {
         image = GetComponent<Image>();
+        animator = chaos.GetComponent<Animator>();
     }
 
     void Update() {
@@ -24,7 +27,12 @@ public class GameButton : MonoBehaviour
     }
 
     public void Restore() {
-        if (dataType == "food") GameData.food = GameData.foodRef;
-        else if (dataType == "sleep") GameData.sleep = GameData.sleepRef;
+        if (dataType == "food") {
+            GameData.food = GameData.foodRef;
+            animator.SetBool("Eat", true);
+        } else if (dataType == "sleep") {
+            GameData.sleep = GameData.sleepRef;
+            animator.SetBool("Sleep", true);
+        }
     }
 }

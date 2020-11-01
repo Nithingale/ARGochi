@@ -574,7 +574,7 @@ Animator:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2704695157193061273}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Avatar: {fileID: 9000000, guid: 4d099a333bf98c940b032557c10e3610, type: 3}
   m_Controller: {fileID: 9100000, guid: e125a8a44c102b34e88a6921c9fb9b46, type: 2}
   m_CullingMode: 0
@@ -1279,6 +1279,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3877552611582058887}
   - component: {fileID: 3387154370397979359}
+  - component: {fileID: 1872868397508515414}
   m_Layer: 0
   m_Name: "Sph\xE8re"
   m_TagString: Untagged
@@ -1361,6 +1362,19 @@ SkinnedMeshRenderer:
     m_Center: {x: 0.000015926315, y: 0.0018158562, z: 0.00016106537}
     m_Extent: {x: 0.0021577205, y: 0.0028762354, z: 0.003184013}
   m_DirtyAABB: 0
+--- !u!65 &1872868397508515414
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6038243682696691311}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.021049269, y: 0.026811637, z: 0.02834336}
+  m_Center: {x: 0.000044690314, y: -0.0004966563, z: -0.00071698986}
 --- !u!1 &6040030969617063930
 GameObject:
   m_ObjectHideFlags: 0

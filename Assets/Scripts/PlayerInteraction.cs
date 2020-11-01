@@ -4,24 +4,35 @@ using UnityEngine;
 
 public class PlayerInteraction : MonoBehaviour
 {
-    public float force = 10.0f;
+    public float force = 1000.0f;
     private Rigidbody rb;
 
     // Start is called before the first frame update
     void Start()
     {
-        rb = gameObject.GetComponent<Rigidbody>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        foreach(Touch touch in Input.touches)
-        {
-            if (touch.phase == TouchPhase.Began)
-            {
-                rb.AddForce(transform.forward * force);
-            }
+    }
+
+    public void Jump()
+    {
+        GameObject chaos = GameObject.Find("Chaos");
+        if (chaos) 
+            chaos.GetComponent<Rigidbody>().AddForce(Random.Range(-10.0f, 10.0f), force, Random.Range(-10.0f, 10.0f));
+    }
+
+    public void Stand()
+    {
+        GameObject chaos = GameObject.Find("Chaos");
+        if (chaos) {
+            chaos.transform.eulerAngles = new Vector3(
+                chaos.transform.eulerAngles.x,
+                chaos.transform.eulerAngles.y,
+                0
+            );
         }
     }
 }

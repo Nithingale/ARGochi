@@ -10,4 +10,8 @@ public static class GameData
     public static float food = foodRef;
     public static float sleep = sleepRef;
     public static bool isAlive = true;
+
+    public static bool playFeed = false;
+    public static bool playSleep = false;
+    public static bool playDie = false;
 }

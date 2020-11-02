@@ -6,7 +6,7 @@ public class PlayerInteraction : MonoBehaviour
 {
     private float force = 100.0f;
     private Rigidbody rb;
-    private float initialPos = 10.0f;
+    private float initialPos = 5.0f;
 
     // Start is called before the first frame update
     void Start()
